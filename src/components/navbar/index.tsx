@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/assets/logo.png";
-import { FiGrid, FiHeart, FiShoppingBag, FiSmartphone } from "react-icons/fi";
+import { FiChevronDown, FiGrid, FiSmartphone } from "react-icons/fi";
 
 function Navbar() {
   return (
@@ -15,25 +14,25 @@ function Navbar() {
       {/* menu */}
       <div className="py-4 px-12">
         <ul className="flex gap-6 h-full items-center justify-evenly font-bold text-sm">
-          <li>
+          <li className="hover:text-orange-600">
             <Link href={"/"}>Home</Link>
           </li>
-          <li>
+          <li className="hover:text-orange-600">
             <Link href={"/"}>About</Link>
           </li>
-          <li>
+          <li className="hover:text-orange-600">
             <Link href={"/"}>Shop</Link>
           </li>
-          <li>
-            <Link href={"/"}>Our Collections</Link>
+          <li className="hover:text-orange-600">
+            <button className="flex items-center">Our Collections <FiChevronDown/></button>
           </li>
-          <li>
+          <li className="hover:text-orange-600">
             <Link href={"/"}>Blog</Link>
           </li>
-          <li>
+          <li className="hover:text-orange-600">
             <Link href={"/"}>Contact</Link>
           </li>
-          <li>
+          <li className="hover:text-orange-600">
             <Link href={"/"}>My Account</Link>
           </li>
         </ul>
